@@ -9,96 +9,86 @@ export const StyledHeader = styled.div`
   color: white;
 
   .sav {
-   display: none;
- }
+    display: none;
+  }
 
- @media(max-width: 955px) {
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: flex-start;
+  @media (max-width: 955px) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-   .sav {
-     display: flex;
-     margin-left: -20px;
-     margin-top: 30px;
-   }
- }
-`
+    .sav {
+      display: flex;
+      margin-left: -20px;
+      margin-top: 30px;
+    }
+  }
+`;
 
 export const HeaderContainer = styled.div`
   width: 80%;
   display: flex;
   justify-content: space-between;
 
-  @media(max-width: 955px) {
-        flex-direction: column !important;
-        align-items: flex-start;
-        justify-content: flex-start;
+  @media (max-width: 955px) {
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-        img {
-       display: none;
-        }
-      }
-`
+    img {
+      display: none;
+    }
+  }
+`;
 
 export const HeaderLeft = styled.div`
   width: 40%;
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   h1 {
-left: calc(50% - 550px/2);
-top: 0px;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-line-height: 120%;
-color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
+    font-size: 3rem;
+    line-height: 120%;
+    color: #ffffff;
+  }
 
   p {
-font-style: normal;
-font-weight: normal;
-line-height: 22px;
-color: #8794BA;
-}
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    color: #8794ba;
+  }
 
- button {
-height: 50px;
-width: 238px;
-left: 0px;
-top: 265px;
-border-radius: 68px;
-padding: 10px, 80px, 10px, 80px;
-border: none;
-margin-top: 20px;
-background-color: #EF2A82;
-color: white;
- }
+  button {
+    border-radius: 68px;
+    padding: 10px 40px;
+    border: none;
+    margin-top: 20px;
+    background-color: #ef2a82;
+    color: white;
+    max-width: 200px;
+  }
 
- @media(max-width: 955px) {
-   width: 100%;
- }
+  @media (max-width: 955px) {
+    width: 100%;
 
-`
+    h1 {
+      font-size: 2rem;
+    }
+  }
+`;
 
 export const HeaderRight = styled.div`
-
-
   .rect-9 {
-      width: 850px;
-      position: absolute;
-      right: 0;
-      z-index: 1111;
-      margin-bottom: -200px;
-      height: 600px;
-      cursor: pointer;
+    width: 850px;
+    position: absolute;
+    right: 0;
+    z-index: 1111;
+    margin-bottom: -200px;
+    height: 600px;
+    cursor: pointer;
   }
 
   .cover-chart {
@@ -114,15 +104,14 @@ export const HeaderRight = styled.div`
     z-index: 1111111;
   }
 
-  @media(max-width: 1307px) {
-      .rect-9 {
-        width: 50%;
-        top: 120px;
-      }
+  @media (max-width: 1307px) {
+    .rect-9 {
+      width: 50%;
+      top: 120px;
+    }
 
-      .cover-chart {
-        display: none;
-      }
-
+    .cover-chart {
+      display: none;
+    }
   }
-`
+`;

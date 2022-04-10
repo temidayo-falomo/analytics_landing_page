@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledTopPart = styled.div`
   background-color: #172755;
   z-index: 1111;
+  position: relative;
 
   @media(max-width: 1307px) {
     margin-bottom: 800px;
@@ -16,13 +17,18 @@ export const StyledTopPart = styled.div`
 
  .big-sub {
      position: absolute;
-     top: -100px;
-     right: -30px;
+     width: 90%;
+     max-width: 1000px;
+     top: -90px;
+     right: 0;
+     z-index: 1;
  }
 
  .sm-sub {
      position: absolute;
-     top: -40px;
+     top: 0;
+     width: 90%;
+     max-width: 600px;
  }
 
  section:after {
@@ -45,5 +51,11 @@ export const StyledTopPart = styled.div`
     section:after {
         height: 900px;
     }
+ }
+
+ @media(max-width: 800px) {
+     .big-sub {
+         display: none;
+     }
  }
 `

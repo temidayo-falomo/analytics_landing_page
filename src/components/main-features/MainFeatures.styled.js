@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const StyledMainFeatures = styled.section`
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-bottom: 70px;
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+`;
 export const TopMainFeatures = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,22 +16,26 @@ export const TopMainFeatures = styled.div`
   align-items: center;
 
   h2 {
-font-weight: bold;
-font-size: 35px;
-line-height: 47px;
-color: #172755;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 47px;
+    color: #172755;
   }
 
   p {
-width: 70%;
-font-style: normal;
-font-weight: normal;
-line-height: 150%;
-text-align: center;
-color: #8794BA;
-font-size: 17px;
+    width: 75%;
+    line-height: 150%;
+    text-align: center;
+    color: #8794ba;
+    font-size: 17px;
   }
-`
+
+  @media (max-width: 800px) {
+    p {
+      width: 100%;
+    }
+  }
+`;
 
 export const FlexMainFeatures = styled.div`
   display: flex;
@@ -42,27 +46,29 @@ export const FlexMainFeatures = styled.div`
     flex-direction: column;
     gap: 30px;
   }
-`
+`;
 
 export const Feature = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  padding: 20px;
 
   h4 {
-      color: #172755;
-      font-size: 17px;
+    color: #172755;
+    font-size: 17px;
   }
 
   img {
-      width: 25px;
+    width: 25px;
   }
 
   p {
-     text-align: center;
-     width: 95%;
-     color: #8794BA;
-     font-size: 16px;
+    text-align: center;
+    width: 95%;
+    color: #8794ba;
+    font-size: 16px;
+    line-height: 150%;
   }
-`
+`;
